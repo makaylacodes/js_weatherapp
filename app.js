@@ -70,7 +70,7 @@ function getWeather(latitude, longitude){
     }
     function displayWeather(){
         iconElement.innerHTML = `<img src = "icons/${weather.iconId}.jpg"/>`;
-        tempElement.innerHTML = `${weather.temperature.value}<span>C</span>`;
+        tempElement.innerHTML = `${weather.temperature.value}°<span>C</span>`;
         descElement.innerHTML = weather.description;
         locationElement.innerHTML = `${weather.city}, ${weather.country}`;
     }
@@ -90,11 +90,11 @@ function getWeather(latitude, longitude){
             let fahrenheit = celsiusToFahrenheit(weather.temperature.value);
             fahrenheit = Math.floor(fahrenheit);
 
-            tempElement.innerHTML = `${fahrenheit}<span>F</span>`;
+            tempElement.innerHTML = `${fahrenheit}°<span>F</span>`;
             weather.temperature.unit = "fahrenheit";
         
         }else{
-            tempElement.innerHTML = `${weather.temperature.value}<span>C</span>`;
+            tempElement.innerHTML = `${weather.temperature.value}°<span>C</span>`;
             weather.temperature.unit = "celsius";
         }
 
