@@ -9,13 +9,38 @@
     <link rel="stylesheet" href="font/Rimouski.css">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+
+<style>
+
+    .glow {
+        font-family: "Brush Script MT", cursive;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        animation: glow 1s ease-in-out infinite alternate;
+      }
+    
+      @-webkit-keyframes glow {
+        from {
+          text-shadow: 0 0 10px rgb(240, 188, 188), 0 0 20px rgb(39, 29, 29), 0 0 30px #9b7d7d, 0 0 40px #100c1a, 0 0 50px #1b1719, 0 0 60px #f18bbe, 0 0 70px #ec76b1;
+        }
+        
+        to {
+          text-shadow: 0 0 30px rgb(199, 192, 198), 0 0 30px #c55873, 0 0 40px #0f0c0c, 0 0 50px #0f0d0e, 0 0 60px #312d2f, 0 0 70px #0e1113, 0 0 80px #362e2f;
+        }
+      }
+      
+    </style>
+    
+<body background = "images/storm.gif">
     
     <div class="container">
+
         <div class="app-title">
-            <p> Weather App</p>
+            <p class = "glow"> Weather App</p>
         </div>
+
         <div class="notification"> </div>
+
         <div class="weather-container">
             <div class="weather-icon">
                 <img src="icons/unknown.png" alt="">
@@ -23,12 +48,19 @@
             <div class="temperature-value">
                 <p>- °<span>C</span></p>
             </div>
+
             <div class="temperature-description">
                 <p> - </p>
             </div>
+
             <div class="location">
                 <p>-</p>
             </div>
+
+            <div class = "note">
+                <p>*To view the temperature in Fahrenheit, click on the Celsius symbol</p>
+            </div>
+
         </div>
     </div>
     

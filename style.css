@@ -1,38 +1,39 @@
-/* Need to fix the three errors as well as personalize the colors */
 
-*{
-    font-family: "times";
-}
 
 body{
     background-color: #b76e79;
+    min-height: 100vh;
+    max-width: 400px;
+    font-size: 1.2rem;
+    margin: 0 auto;
+    padding: 2rem;
 }
 
 .container{
     width: 300px;    
-    background-color: rgb(218, 223, 224);
+    background-color: rgb(49, 29, 48);
     
     display: block;
     margin: 0 auto;
     
-    border-radius: 100px;
-    padding-bottom : 250px;
+    border-radius: 50px;
+    padding: 10px;
+    padding-bottom: 17rem;
+    
 }
 
 .app-title{
     width: 300px;
     height: 50px;
     border-radius: 10px 10px 0 0;
+    margin-bottom: 2rem;
 }
 
 .app-title p{
-    text-align: center;
-    padding: 15px;
-    margin: 0 auto;
-    font-size: 1.8em;
+    text-align: center;  
+    font-size: 2em;
     font-weight: bold;
-    text-decoration: underline;
-    color: #000105;
+    
 }
 
 .notification{
@@ -65,17 +66,18 @@ body{
 }
 
 .temperature-value{
-    width: 300px;
+    width: 315px;
     height:50px;
 }
 
 .temperature-value p{
     padding: 0;
     margin: 0;
-    color: #02040e;
-    font-size: 3em;
+    color: #f0c2f7;
+    font-size: 1.9em;
     text-align: center;
     cursor: pointer;
+    font-weight: bold;
 }
 
 .temperature-value p:hover{
@@ -83,7 +85,7 @@ body{
 }
 
 .temperature-value span{
-    color: #01040c;
+    color: #f0c2f7;
     font-size: 0.5em;
 }
 
@@ -92,11 +94,12 @@ body{
 }
 
 .temperature-description p{
-    padding: 8px;
+    padding: 0;
     margin: 0;
-    color: #02050f;
+    color: #f0c2f7;
     text-align: center;
-    font-size: 2.1em;
+    font-size: 1.4em;
+    font-weight: bold;
 }
 
 .location{
@@ -105,9 +108,22 @@ body{
 
 .location p{
     margin: 0;
-    padding: 0;
-    color: #02040c;
+    padding-bottom: 1.7rem;
+    color: #f0c2f7;
     text-align: center;
-    font-size: 1.4em;
+    font-size: 1.6em;
     font-weight: bold;
 }
+
+.note p{
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    text-align: center;
+    font-size: 1.1rem;
+    font-family: system-ui ;
+   
+  
+}
+
+
